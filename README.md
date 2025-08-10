@@ -14,6 +14,9 @@ Die Software wird modular aufgebaut, um perspektivisch Funktionen wie den Import
 
 ##  Status & Updates
 
+### Nächstes update: **ArDrive Wallet Generierung hinzugefügt**
+
+
 ### Update – 10.08.2025
 
 Heute habe ich die beiden Tabs **Login** und **Registrierung** fertiggestellt.  
@@ -27,7 +30,6 @@ Diese erscheinen immer zuerst nach dem Start der Software.
 Damit ist es möglich, nach erfolgreichem Login Transaktionen auf der automatisch erzeugten Prüfer-Wallet durchzuführen.  
 Die Wallet-Erstellung erfolgt plattformübergreifend (Raspberry Pi & Windows/WSL).
 
-**Nächsterschritt: ArDrive Wallet Generierung hinzufügen**
 
 ![Login und Registrierung Demo](gifs/Sperrbildschirm.gif)
 
