@@ -6,3 +6,4 @@ Die Software wird modular aufgebaut, um perspektivisch Funktionen wie den Import
 
 
 
+![Demo Animation](gifs/Sperrbildschirm.gif1)
