@@ -1,4 +1,4 @@
-#  Technikerarbeit-DGUV-V3-mit-Solana-Anbindung
+#  Technikerarbeit: DGUV-V3-Messgerätmit Solana-Anbindung
 
 Ziel dieses Projekts ist die Entwicklung eines prototypischen DGUV-Messsystems auf Basis eines Raspberry Pi, das eine fälschungssichere, benutzerfreundliche und datenschutzkonforme Erfassung sowie Archivierung von Prüfdaten ermöglicht.  
 Die zentrale Anforderung besteht in der unveränderlichen Speicherung aller Messergebnisse auf der Solana-Blockchain, wodurch eine nachträgliche Manipulation ausgeschlossen wird und die Prüfdaten langfristig nachvollziehbar bleiben.
@@ -27,7 +27,7 @@ Diese erscheinen immer zuerst nach dem Start der Software.
 Damit ist es möglich, nach erfolgreichem Login Transaktionen auf der automatisch erzeugten Prüfer-Wallet durchzuführen.  
 Die Wallet-Erstellung erfolgt plattformübergreifend (Raspberry Pi & Windows/WSL).
 
-![Login und Registrierung Demo](gifs/Sperrbildschirm1.gif)
+![Login und Registrierung Demo](gifs/Sperrbildschirm.gif)
 
 
 
