@@ -27,6 +27,8 @@ Diese erscheinen immer zuerst nach dem Start der Software.
 Damit ist es möglich, nach erfolgreichem Login Transaktionen auf der automatisch erzeugten Prüfer-Wallet durchzuführen.  
 Die Wallet-Erstellung erfolgt plattformübergreifend (Raspberry Pi & Windows/WSL).
 
+**Nächsterschritt: ArDrive Wallet Generierung hinzufügen**
+
 ![Login und Registrierung Demo](gifs/Sperrbildschirm.gif)
 
 
