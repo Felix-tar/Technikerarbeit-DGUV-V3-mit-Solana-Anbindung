@@ -4,6 +4,20 @@ Die Bedienung erfolgt über eine grafische Benutzeroberfläche, die lokal auf de
 Nach Abschluss der Messungen wird ein PDF-Protokoll generiert, das die relevanten Prüfdaten enthält und anschließend verschlüsselt über ArDrive gespeichert wird. Der Zugriff auf diese Protokolle ist ausschließlich autorisierten Nutzern vorbehalten. 
 Die Software wird modular aufgebaut, um perspektivisch Funktionen wie den Import von EPLAN-Strukturen in der Zukunft zu ermöglichen
 
+# Status der Software
+
+## 🗓 Update – 10.08.2025
+
+Heute habe ich die beiden Tabs **Login** und **Registrierung** fertiggestellt.  
+Diese erscheinen immer zuerst nach dem Start der Software.  
+- **Login:** Benutzer meldet sich mit **Benutzername**, **Passwort** und **Key-Datei** vom USB-Stick an.  
+  Das Passwort wird mit **bcrypt** validiert, anschließend wird die Wallet mit **AES-256** entschlüsselt.  
+- **Registrierung:** Erstellt einen neuen Account mit Benutzername/Passwort und generiert dabei eine echte **Solana-Wallet** via CLI.  
+  Die privaten Schlüssel werden AES-verschlüsselt in der Datei `user.json` auf dem Stick gespeichert.  
+
+Damit ist es möglich, nach erfolgreichem Login Transaktionen auf der automatisch erzeugten Prüfer-Wallet durchzuführen.  
+Die Wallet-Erstellung erfolgt plattformübergreifend (Raspberry Pi & Windows/WSL).
+
+![Login und Registrierung Demo](gifs/Sperrbildschirm1.gif)
 
 
-![Demo Animation](gifs/Sperrbildschirm1.gif)
