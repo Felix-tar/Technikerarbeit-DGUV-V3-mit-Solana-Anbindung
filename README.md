@@ -5,4 +5,4 @@ Nach Abschluss der Messungen wird ein PDF-Protokoll generiert, das die relevante
 Die Software wird modular aufgebaut, um perspektivisch Funktionen wie den Import von EPLAN-Strukturen in der Zukunft zu ermöglichen
 
 
-![Demo Animation](gifs/Sperrbildschirm.gif)
+
