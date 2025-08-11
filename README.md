@@ -19,7 +19,7 @@ Die Software wird modular aufgebaut, um perspektivisch Funktionen wie den Import
 ### Update – 11.08.2025
 Die ArWeave-Privatekeys werden nun ebenfalls in der `.user.json` gespeichert und mit dem Benutzernamen sowie Passwort vertschlüsselt. Da die ArWeave-CLI die Eingabe selbstgewählter BIP-32-Seedphrasen erfordert, habe ich eine Zufallsgenerierung eingebaut, die die Seeds erstellt. Die Seeds sind dabei unwichtig, da sie ohnehin verschlüsselt auf dem USB-Stick gespeichert werden und daher nicht separat aufgeschrieben werden müssen.
 
-![User.Jason demo](gifs/Sperrbildschirm.gif)
+![User.Jason demo](gifs/user jason V2.png)
 
 
 
