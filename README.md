@@ -16,16 +16,20 @@ Die Software wird modular aufgebaut, um perspektivisch Funktionen wie den Import
 
 ### Nächstes update: **ArDrive Wallet Generierung hinzugefügt**
 
+### Update – 11.08.2025
+Die ArWeave-Privatekeys werden nun ebenfalls in der `.user.json` gespeichert und mit dem Benutzernamen sowie Passwort vertschlüsselt. Da die ArWeave-CLI die Eingabe selbstgewählter BIP-32-Seedphrasen erfordert, habe ich eine Zufallsgenerierung eingebaut, die die Seeds erstellt. Die Seeds sind dabei unwichtig, da sie ohnehin verschlüsselt auf dem USB-Stick gespeichert werden und daher nicht separat aufgeschrieben werden müssen.
+
+
 
 ### Update – 10.08.2025
 
 Heute habe ich die beiden Tabs **Login** und **Registrierung** fertiggestellt.  
-Diese erscheinen immer zuerst nach dem Start der Software.  
+Diese erscheinen nach dem Start der Software.  
 
 - **Login:** Benutzer meldet sich mit **Benutzername**, **Passwort** und **Key-Datei** vom USB-Stick an.  
   Das Passwort wird mit **bcrypt** validiert, anschließend wird die Wallet mit **AES-256** entschlüsselt.  
 - **Registrierung:** Erstellt einen neuen Account mit Benutzername/Passwort und generiert dabei eine echte **Solana-Wallet** via CLI.  
-  Die privaten Schlüssel werden AES-verschlüsselt in der Datei `user.json` auf dem Stick gespeichert.  
+  Die privaten Schlüssel werden AES-verschlüsselt in der Datei `.user.json` auf dem Stick gespeichert.  
 
 Damit ist es möglich, nach erfolgreichem Login Transaktionen auf der automatisch erzeugten Prüfer-Wallet durchzuführen.  
 Die Wallet-Erstellung erfolgt plattformübergreifend (Raspberry Pi & Windows/WSL).
