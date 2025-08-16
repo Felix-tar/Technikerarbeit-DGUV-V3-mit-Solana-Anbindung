@@ -11,12 +11,15 @@ Nach Abschluss der Messungen wird ein PDF-Protokoll generiert, das die relevante
 
 ##  Status & Updates
 
-### Nächstes update: **aktivitätsanzeige bei wallet erstellung hinzufügen & Struktureditor debuggen**
+### Nächstes update: **Struktureditor debuggen**
 
 
 ### Update – 16.08.2025
 Zur besseren Bedienung und Benutzerfreundlichkeit habe ich ein Fenster hinzugefügt, das den Status des Generierungsprozesses in Form eines Fortschrittsbalkens anzeigt. Darin werden die einzelnen Schritte – Beginn der Generierung, Solana-Wallet-Generierung, Solana-Wallet erstellt, Beginn der Arweave-Wallet-Generierung und Arweave-Wallet erstellt – dargestellt, um dem Benutzer zu verdeutlichen, dass der Prozess bereits läuft und er bitte warten soll.
+
 ![status_bar](gifs/Sperrbildschirm_mit_statusanzeige.gif)
+
+
 
 ### Update – 11.08.2025
 Die ArWeave-Privatekeys werden nun ebenfalls in der `.user.json` gespeichert und mit dem Benutzernamen sowie Passwort vertschlüsselt. Da die ArWeave-CLI die Eingabe selbstgewählter BIP-32-Seedphrasen erfordert, habe ich eine Zufallsgenerierung eingebaut, die die Seeds erstellt. Die Seeds sind dabei unwichtig, da sie ohnehin verschlüsselt auf dem USB-Stick gespeichert werden und daher nicht separat aufgeschrieben werden müssen.
