@@ -14,6 +14,12 @@ Nach Abschluss der Messungen wird ein PDF-Protokoll generiert, das die relevante
 ### Nächstes update: **Struktureditor debuggen**
 
 
+### Update – 17.08.2025 
+Dashboard hinzugefügt. Zur Aufladung der Prüfer-Wallets und für eine bessere Übersicht wurde nun ein Dashboard implementiert. Es generiert QR-Codes, die die öffentlichen Adressen der Wallets enthalten, sodass problemlos über eine mobile Wallet oder direkt über Börsen-Apps wie Binance, Coinbase, Kraken etc. Kryptowährungen an die Prüfer-Wallets gesendet werden können.
+
+![dashboard](gifs/dashboard.png)
+
+
 ### Update – 16.08.2025
 Zur besseren Bedienung und Benutzerfreundlichkeit habe ich ein Fenster hinzugefügt, das den Status des Generierungsprozesses in Form eines Fortschrittsbalkens anzeigt. Darin werden die einzelnen Schritte – Beginn der Generierung, Solana-Wallet-Generierung, Solana-Wallet erstellt, Beginn der Arweave-Wallet-Generierung und Arweave-Wallet erstellt – dargestellt, um dem Benutzer zu verdeutlichen, dass der Prozess bereits läuft und er bitte warten soll.
 
@@ -24,7 +30,7 @@ Zur besseren Bedienung und Benutzerfreundlichkeit habe ich ein Fenster hinzugef�
 ### Update – 11.08.2025
 Die ArWeave-Privatekeys werden nun ebenfalls in der `.user.json` gespeichert und mit dem Benutzernamen sowie Passwort vertschlüsselt. Da die ArWeave-CLI die Eingabe selbstgewählter BIP-32-Seedphrasen erfordert, habe ich eine Zufallsgenerierung eingebaut, die die Seeds erstellt. Die Seeds sind dabei unwichtig, da sie ohnehin verschlüsselt auf dem USB-Stick gespeichert werden und daher nicht separat aufgeschrieben werden müssen.
 
-![User Jason](gifs/user%20jason%20V2.png)
+
 
 
 
