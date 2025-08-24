@@ -19,7 +19,7 @@ In diesem Update habe ich das Dashboard weiter überarbeitet. Es werden nun mehr
 
 Ebenfalls hinzugekommen ist ein Knopf zum Erstellen eines Ordners in ArDrive. Zwar dauert es etwa 20 bis 30 Minuten, bis die Transaktion endgültig bestätigt ist, jedoch erhalten wir unmittelbar eine Folder-ID, die später für die Start- und End-Memos genutzt wird. Da die verschlüsselten Memos durch die X25519-Multiverschlüsselung rund 1200 Bytes groß werden und damit die Größenbegrenzung von Solana überschreiten, erfolgt der Upload bereits bei der Start-Memo in ArDrive. Dort wird eine JSON-Datei mit den verschlüsselten Informationen hinterlegt, die beim Anlegen einer neuen Maschine im Maschinenmanager erzeugt wird.
 
-![dashboard](gifs/dashboard%v2.png)
+![dashboard](gifs/dashboardv2.png)
 
 Zusätzlich habe ich den Maschinenmanager programmiert. Er legt auf dem Prüfer-Stick eine JSON-Datei an, in der Maschinen samt Kundennummern gespeichert sind. Beim Messen kann der Prüfer anschließend die passende Maschine auswählen. Die Start-Memo wird verschlüsselt nach ArDrive hochgeladen, da Solana hierfür nicht ausreicht. Alternativen wie IPFS oder Ethereum habe ich zwar in Betracht gezogen, für die Umsetzung genügt jedoch Arweave beziehungsweise ArDrive, da ich deren CLI bereits kenne. Aktuell arbeite ich daran, den Upload der Start-Memo in den Ablauf einzubinden. Denkbar ist, dass der Upload erst erfolgt, wenn der Prüfer im Structure-Editor die Struktur fertiggestellt hat. Auf diese Weise könnten Kundendaten und Struktur gemeinsam hochgeladen werden, was Transaktionsgebühren spart. Da die leere Struktur von weiteren Prüfern wiederverwendet werden soll, wird sie unverschlüsselt hochgeladen, was unproblematisch ist, da es sich nur um Rohdaten und BMK-Bezeichnungen handelt.
 
