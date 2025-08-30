@@ -108,7 +108,7 @@ Die Wallet-Erstellung erfolgt plattformübergreifend (Raspberry Pi & Windows/WSL
 ---
 
 ##  Installation 
-
+unter windows wird die Solana-CLI udn die ArDrive-CLI benötigt. Instruktionen folgen.
 
 ---
 
