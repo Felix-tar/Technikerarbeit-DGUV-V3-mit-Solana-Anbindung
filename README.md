@@ -8,10 +8,44 @@ Nach Abschluss der Messungen wird ein PDF-Protokoll generiert, das die relevante
 
 ---
 
+##  Status & Updates & Ausblick
 
-##  Status & Updates
+##  Ausblick
+Fertigstellung SW zu 95% bis 30.08 ✓
+Beginn Hardwaretest am 30.08.
+Bestellung Material ab 01.09.
+Fertigstellung Messkarte & Gehäuse 3D-Druck bis 15.09
 
-### Nächstes update: **Verschlüsselung der kundendaten in ardrive **
+##  Status 
+
+Die Software ist in ihrer Grundstruktur fertiggestellt. Derzeit erfolgt die Messung allerdings noch manuell über einen gesetzten Wert. Als nächster Schritt folgt die Anbindung an die Messkarte, damit die Messungen automatisch erfasst und direkt in den Prozess integriert werden können.### Nächstes update: **Beginn Hardwaretest **
+
+### Update – 30.08.2025
+
+Spaltung der Software in drei Teile: Kundensoftware, Prüfersoftware, Messungssoftware
+Nachdem die grobe Konstruktion aller Tabs abgeschlossen war und diese ihre Grundfunktionen erfüllten, habe ich in den letzten fünf Tagen zahlreiche Details optimiert. Dazu zählen das automatische Öffnen und Speichern von Dateien sowie kleinere kosmetische Anpassungen.
+Den ursprünglich geplanten PDF-Editor habe ich verworfen und stattdessen eine separate Kundensoftware entwickelt.
+Mit dieser kann der Kunde die Daten live von der Blockchain laden und durch die Blockhashes jederzeit verifizieren. Sensible Daten werden dabei lokal mit den privaten Schlüsseln entschlüsselt.
+In diesem Zuge habe ich das zuvor ausschließlich für Linux entwickelte Python-Programm Windows-kompatibel gemacht. Notwendig waren lediglich Anpassungen bei den Aufrufen von CMD und Windows Explorer. Anspruchsvoll war dagegen die Installation und Anbindung der Solana-CLI und ArDrive-CLI unter WSL, was letztlich jedoch erfolgreich umgesetzt werden konnte.
+Die Startseite der Kundensoftware (siehe Abbildung) bildet die in DGUV-V3 und DIN-Normen geforderte Protokollierung bei Besichtigung, Erprobung und Messung der Maschinen ab.
+
+![kundensoftware](gifs/kundensoftware.png)
+
+
+Auch die Prüfersoftware ist inzwischen fertiggestellt. Auf Windows umfasst sie die Tabs Dashboard, Struktureditor, Maschinenmanager, Readings und Settings. Der Measurements-Tab ist dagegen nur auf dem Raspberry Pi vorgesehen, da die Messungen direkt dort durchgeführt werden. In der Prüfersoftware habe ich diesen Tab daher durch ein einfaches SSH-Verbindungsfenster ersetzt. Darüber lassen sich die zuvor erstellten Strukturen und Maschinendaten mit dem Messgerät synchronisieren.
+Die Synchronisation erfolgt ausschließlich in eine Richtung: Der Raspberry Pi führt die Messungen aus, und wir laden die Ergebnisse anschließend über die Blockchain wieder herunter. Das folgende Bild zeigt den Readings-Tab, über den Daten aus Solana gespeichert und zusätzlich verschlüsselt in ArDrive-Transaktionen abgelegt werden. ArDrive ist dabei notwendig, da Solana-Memos für größere Datenmengen nicht ausreichen.
+
+![readings](gifs/readings.png)
+
+
+Verbesserungen bei Solana-Memos
+In der Software-Version von Januar enthielten die Solana-Memos keine vollständigen Informationen. Wichtige Werte wie Querschnitt, Spannung, Leistung und Art der Komponenten wurden nicht berücksichtigt.
+Durch das neue Schema-Update werden nun alle relevanten Messdaten in Solana vollständig und korrekt gespeichert.
+
+Neue solana memo:
+{"v":1,"kind":"Rpe","val":0.01,"unit":"O","ts":"2025-08-30T02:50:45Z","bmk":"+M00_Erdung 1","ort":"+M00","nid":"9c50edfd34ca455ab36a6653b7207cfe","mid":"erdung-7e825e1c","limit":0.3,"ok":true,"nt":"Erdung","panel":{"bmk":"+M00_Erdung 1","querschnitt":"16 mm\u00b2","typ":"H07VK"}}
+
+
 
 ### Update – 24.08.2025
 
