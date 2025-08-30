@@ -41,7 +41,7 @@ Die Synchronisation erfolgt ausschließlich in eine Richtung: Der Raspberry Pi f
 
 
 Verbesserungen bei Solana-Memos:
-In der Software-Version von Januar enthielten die Solana-Memos keine vollständigen Informationen. Wichtige Werte wie Querschnitt, Spannung, Leistung und Art der Komponenten wurden nicht berücksichtigt.
+In der Software-Version von früher enthielten die Solana-Memos keine vollständigen Informationen. Wichtige Werte wie Querschnitt, Spannung, Leistung und Art der Komponenten wurden nicht berücksichtigt.
 Durch das neue Schema-Update werden nun alle relevanten Messdaten in Solana vollständig und korrekt gespeichert.
 
 Neue solana memo:
