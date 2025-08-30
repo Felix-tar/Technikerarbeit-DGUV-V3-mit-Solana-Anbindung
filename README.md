@@ -24,7 +24,7 @@ Die Software ist in ihrer Grundstruktur fertiggestellt. Derzeit erfolgt die Mess
 
 ### Update – 30.08.2025
 
-Spaltung der Software in drei Teile: Kundensoftware, Prüfersoftware, Messungssoftware
+Spaltung der Software in drei Teile:Kundensoftware, Prüfersoftware, Messungssoftware
 Nachdem die grobe Konstruktion aller Tabs abgeschlossen war und diese ihre Grundfunktionen erfüllten, habe ich in den letzten fünf Tagen zahlreiche Details optimiert. Dazu zählen das automatische Öffnen und Speichern von Dateien sowie kleinere kosmetische Anpassungen.
 Den ursprünglich geplanten PDF-Editor habe ich verworfen und stattdessen eine separate Kundensoftware entwickelt.
 Mit dieser kann der Kunde die Daten live von der Blockchain laden und durch die Blockhashes jederzeit verifizieren. Sensible Daten werden dabei lokal mit den privaten Schlüsseln entschlüsselt.
@@ -40,7 +40,7 @@ Die Synchronisation erfolgt ausschließlich in eine Richtung: Der Raspberry Pi f
 ![readings](gifs/readings.png)
 
 
-Verbesserungen bei Solana-Memos
+Verbesserungen bei Solana-Memos:
 In der Software-Version von Januar enthielten die Solana-Memos keine vollständigen Informationen. Wichtige Werte wie Querschnitt, Spannung, Leistung und Art der Komponenten wurden nicht berücksichtigt.
 Durch das neue Schema-Update werden nun alle relevanten Messdaten in Solana vollständig und korrekt gespeichert.
 
