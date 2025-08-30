@@ -45,6 +45,8 @@ Durch das neue Schema-Update werden nun alle relevanten Messdaten in Solana voll
 Neue solana memo:
 {"v":1,"kind":"Rpe","val":0.01,"unit":"O","ts":"2025-08-30T02:50:45Z","bmk":"+M00_Erdung 1","ort":"+M00","nid":"9c50edfd34ca455ab36a6653b7207cfe","mid":"erdung-7e825e1c","limit":0.3,"ok":true,"nt":"Erdung","panel":{"bmk":"+M00_Erdung 1","querschnitt":"16 mm\u00b2","typ":"H07VK"}}
 
+Ich habe mir außerdem von ChatGPT Icons für meine Software erstellen lassen. Sieht inzwischen richtig professionell aus.
+
 
 
 ### Update – 24.08.2025
