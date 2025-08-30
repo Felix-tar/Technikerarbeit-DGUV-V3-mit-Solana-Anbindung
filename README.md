@@ -18,7 +18,9 @@ Fertigstellung Messkarte & Gehäuse 3D-Druck bis 15.09
 
 ##  Status 
 
-Die Software ist in ihrer Grundstruktur fertiggestellt. Derzeit erfolgt die Messung allerdings noch manuell über einen gesetzten Wert. Als nächster Schritt folgt die Anbindung an die Messkarte, damit die Messungen automatisch erfasst und direkt in den Prozess integriert werden können.### Nächstes update: **Beginn Hardwaretest **
+Die Software ist in ihrer Grundstruktur fertiggestellt. Derzeit erfolgt die Messung allerdings noch manuell über einen gesetzten Wert. Als nächster Schritt folgt die Anbindung an die Messkarte, damit die Messungen automatisch erfasst und direkt in den Prozess integriert werden können.
+
+### Nächstes update: **Beginn Hardwaretest **
 
 ### Update – 30.08.2025
 
