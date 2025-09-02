@@ -13,14 +13,18 @@ Nach Abschluss der Messungen wird ein PDF-Protokoll generiert, das die relevante
 ##  Ausblick
 Fertigstellung SW zu 95% bis 30.08 ✓
 Beginn Hardwaretest am 30.08.
-Bestellung Material ab 01.09.
+Bestellung Material ab 04.09.
 Fertigstellung Messkarte & Gehäuse 3D-Druck bis 15.09
 
 ##  Status 
 
 Die Software ist in ihrer Grundstruktur fertiggestellt. Derzeit erfolgt die Messung allerdings noch manuell über einen gesetzten Wert. Als nächster Schritt folgt die Anbindung an die Messkarte, damit die Messungen automatisch erfasst und direkt in den Prozess integriert werden können.
 
-### Nächstes update: **Beginn Hardwaretest **
+### Nächstes update: **Beginn Hardwaretest, Einbau USV für Raspi, **
+
+### Update – 02.09.2025
+Hardwaretest abgeschlossen. Durch Messung der Spannung am Shuntwiderstand berechnen wir den fließenden Strom; aus Spannung und Strom bestimmen wir dann den Widerstand des Prüflings. Ich habe mit einem LM317, zwei 10 µF Kondensatoren und zwei 10 Ω Widerständen eine provisorische Konstantstromquelle aufgebaut, die wie in der DGUV‑3- und DIN‑Norm gefordert etwa 200 mA liefert. Nun müssen noch Sicherheitskomponenten ergänzt und eine Leiterplatte bestückt werden. 
+
 
 ### Update – 30.08.2025
 
@@ -38,6 +42,11 @@ Auch die Prüfersoftware ist inzwischen fertiggestellt. Auf Windows umfasst sie 
 Die Synchronisation erfolgt ausschließlich in eine Richtung: Der Raspberry Pi führt die Messungen aus, und wir laden die Ergebnisse anschließend über die Blockchain wieder herunter. Das folgende Bild zeigt den Readings-Tab, über den Daten aus Solana gespeichert und zusätzlich verschlüsselt in ArDrive-Transaktionen abgelegt werden. ArDrive ist dabei notwendig, da Solana-Memos für größere Datenmengen nicht ausreichen.
 
 ![readings](gifs/readings.png)
+
+
+Die Software, die später auf dem Messgerät laufen wird, ist praktisch fertig. Sie hat jedoch noch keine Verbindung zur Messkarte und zu den Tasten an der Messleitung. Messungen können bereits manuell hochgeladen werden,  diese werden dann als Memos an die oben ausgewählte Maschine mit dem Messpunkt der links ausgewählten Struktur geschrieben.
+
+![measurements](gifs/measurements.png)
 
 
 Verbesserungen bei Solana-Memos:
